@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>埇桥区卫星地图 - 安徽省宿州市埇桥区地图浏览</title>
+		<meta name="description" content="2019埇桥区卫星地图高清版，安徽省宿州市埇桥区卫星地图浏览，埇桥区卫星地图-安徽省宿州市埇桥区地图浏览" />
+		<meta name="keywords" content="埇桥区卫星地图高清版,安徽省宿州市埇桥区电子地图,埇桥旅游地图">
+		<meta name="renderer" content="webkit">
+		<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.meet99.com/map-yongqiao.html" />
+		<meta name="mobile-agent" content="format=html5;url=https://m.meet99.com/map-yongqiao.html" />
+		<meta name="mobile-agent" content="format=xhtml;url=https://m.meet99.com/map-yongqiao.html" />
+		<link rel="apple-touch-icon-precomposed" href="https://s.meet99.cn/newimg/logo3.png" />
+		<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="https://s.meet99.cn/css/sngeneric.css?v=20180106.css" />
+		<style>
+			html,
+			body {
+				overflow-x: hidden;
+			}
+			
+			#mapscenics .img {
+				background: #DDD;
+			}
+			
+			#mapdiv h1 {
+				font-size: 14px;
+				display: inline-block;
+			}
+			
+			#sceniclist .img {
+				margin: 2px;
+			}
+			
+			.roundbox {
+				margin: 5px 3px 5px 3px;
+				padding: 10px;
+				background: #FFF;
+				border-left: 0;
+				border-top: 0;
+				border-bottom: 0;
+				border-right: 1px solid #eee;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				clear: both;
+				overflow: hidden;
+				line-height: 20px;
+			}
+			
+			.cornernum {
+				top: 1px;
+				left: 1px;
+				z-index: 1;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.cornernum div {
+				margin-left: 4px;
+				font-size: 11px;
+			}
+			
+			#mmiddle {
+				background: #FFF;
+			}
+			
+			#mmiddle .mapimg {
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				filter: alpha(Opacity=1);
+				-moz-opacity: 0.01;
+				opacity: 0.01;
+			}
+			
+			#mright {
+				position: absolute;
+				top: 116px;
+				right: 1px;
+				text-align: center;
+				width: 190px;
+				padding: 0;
+			}
+			
+			#mrightad {
+				margin-top: 0;
+				min-height: 1000px;
+				padding: 0;
+				background: #FFF;
+				border: 1px solid #eee;
+			}
+			
+			#mycity {
+				display: none;
+			}
+			
+			#mycity a {
+				color: #0069ca;
+			}
+			
+			#mleft {
+				position: absolute;
+				top: 120px;
+				left: 0;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				margin-left: 1px;
+				overflow-x: hidden;
+			}
+			
+			.weather td {
+				padding: 10px 30px;
+				font-size: 12px;
+				line-height: 180%;
+			}
+			
+			.weatherindex td {
+				font-size: 12px;
+				line-height: 180%;
+			}
+			
+			#content {
+				overflow-x: hidden;
+			}
+		</style>
+		<base target="_top" />
+		<script type="text/javascript">
+			try {
+				window.et = 23;
+				window.ct = 1;
+				window.ft = 0;
+				window.startTime = new Date();
+				window.nid = 4;
+			} catch(e) {}
+		</script>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="wrap">
+				<div class="logo" onclick="go2('/')"></div>
+				<ul class="menu">
+					<li>
+						<a href="/">首页</a>
+					</li>
+					<li>
+						<a href="/lvyou">景点大全</a>
+					</li>
+					<li>
+						<a href="/shijing">实景旅游</a>
+					</li>
+					<li class="on">
+						<a href="/map">卫星地图</a>
+					</li>
+					<li>
+						<a href="/public">广场</a>
+					</li>
+				</ul>
+				<div class="search">
+					<form action="/search/" method="get" class="sform" onsubmit="return ss(this)"><input type="text" name="q" placeholder="泰山、北京、法国" class="qtext plh" value=""><input type="hidden" name="f" value=""><input type="hidden" name="m" value="4"><button type="submit" class="qbtn"><i></i></button></form>
+				</div>
+				<div id="upanel"></div>
+				<div id="monkey" style="position:absolute;top:12px;right:135px;width:1px;height:1px;"></div>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div id="pageLocation">
+			<div class="loc">当前位置：
+				<a href="/map">中国</a> >
+				<a href="/map-anhui.html">安徽省</a> >
+				<a href="/map-suzhoushi.html">宿州市</a> > 埇桥区</div>
+			<div id="share"></div><span id="pageTip"><span>提示：请点击左边市县地名，鼠标拖动平移、滚轮放缩地图。</span></span>
+		</div>
+		<div id="content">
+			<div id="mmiddle">
+				<div id="mapscenics" style="width:calc(100% - 190px);">
+					<div class="wrap" style="overflow-x:hidden;">
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>宿州市博物馆旅游攻略</b> 宿州市博物馆是安徽省“十一五”十大地标性建筑，也是展示宿州最 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601702I01602J01701601701701701E01D01702G02K01D01B02H02G01E02G01802G01901701D01C01D02J01B01C01701B01901801502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-suzhoushibowuguan.html')">
+								<a href="/jingdian-suzhoushibowuguan.html">宿州市博物馆</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>宿州五柳旅游攻略</b> 宿州五柳风景名胜区以“山青、水秀、洞奇、泉灵、稻香”而闻名， ... </div>
+							<div class="img" l="01602N02R02F02L02J01601D01701602K01B01602I02F02K01D01901D01B02H01F01A01701802F02H02H01E01D01E01A01901E02H01E01A02J01C01E02I01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-wlfjq.html')">
+								<a href="/jingdian-wlfjq.html">五柳</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>皇藏峪国家森林公园旅游攻略</b> 皇藏峪因后汉高祖刘邦称帝前曾避秦兵追捕而藏身于此而得名，景区 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601D02F01602G01C01601901D01D02K01E02H02F02K01B02I01F02H01C01D02K01801F02G02H02F01C01C02H01E02J02G02G01G01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-huangcangyu.html')">
+								<a href="/jingdian-huangcangyu.html">皇藏峪</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>灵璧奇石文化园旅游攻略</b> 灵璧奇石文化园以“九龙壁”磬石和“笑口常开”纹石为代表，将“ ... </div>
+							<div class="img" l="01602N02R02F02L02J01601701F01601901A01602I01701B01C01902G02F01701A02G02J01802K01D01801F01901901C02J02K01701A01901802H01F01701502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-lingbiqishi.html')">
+								<a href="/jingdian-lingbiqishi.html">奇石文化园</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽灵璧农业观光示范园旅游攻略</b> 安徽灵璧农业观光示范园是全国一流的现代化农业园区，集高新技术 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601D02H01601C01D01602I02F02H02G02H02F02F01E01D01902K01801D01B01802F02K01801801D02H02J01E01E01F01B02G01801502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-lingbinongbo.html')">
+								<a href="/jingdian-lingbinongbo.html">灵璧农业博览园</a>
+							</div>
+						</div>
+						<div class="box" style="width:468px;height:62px;background:#FFF;margin:0 4px 0 2px;padding:0 2px 0 2px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;overflow:hidden;"><ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-2388453716303466" data-ad-slot="map/5370331833"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽黄山旅游攻略</b> 黄山为三山五岳中的三山之一，被誉为“天下第一奇山”，黄山风景 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601702F01601A01701601D02J01B01701C01A01801G02K02J01901G01901D01G02J01F01B01701A01D01G02F01C01C02I01G01E01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-anhuihuangshan.html')">
+								<a href="/jingdian-anhuihuangshan.html">黄山</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>九华山旅游攻略</b> 九华山自古就是我国著名的旅游胜地，与五台、峨眉、普陀合称中国 ... </div>
+							<div class="img" l="01602N02R02F02L02J01602H01701601B02G01601802K01901B01E01E01902F02K02K01D01C02K01902G01G01F02F01702I01B02I02F02I01B02G01F01G01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-jiuhuashan.html')">
+								<a href="/jingdian-jiuhuashan.html">九华山</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽宏村旅游攻略</b> 安徽宏村被誉为“中国画里的乡村”，是古黟桃花源里一座奇特的牛 ... </div>
+							<div class="img" l="01602N02R02F02L02J01602J02I01601702H01601701902J01901B01901702F02G01901G01D01F02K01901G01902G02I02J02K01E01B01901901702K02F01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-hongcun.html')">
+								<a href="/jingdian-hongcun.html">宏村</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>天柱山旅游攻略</b> 天柱山因主峰如柱倚天而得名，其内“峰雄、石奇、洞幽、水秀”， ... </div>
+							<div class="img" l="01602N02R02F02L02J01601F01901601G01D01601D02H02H01902G01D02J01B02H01702K02F02K01801D01A01801A01801C02J02I01D01D02J01C01C01G01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-tianzhushan.html')">
+								<a href="/jingdian-tianzhushan.html">天柱山</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽西递村旅游攻略</b> 西递古村村落面积190多亩，是一处胡姓聚族而居的古村落。村庄 ... </div>
+							<div class="img" l="01602N02R02F02L02J01602H01D01602I02K01601A01801A02K01G02K01701F01E01B01A01G01F01901701G01902G02J02F02K01801C02G01801D01E02K01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-xidi.html')">
+								<a href="/jingdian-xidi.html">西递</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽徽州古城旅游攻略</b> 徽州古城，是千年徽州府治所在地，古城周围五峰拱秀，六水迴澜， ... </div>
+							<div class="img" l="01602N02R02F02L02J01601701901601C01D01602K01D02K01A01F02G02F01B01E01G01F01F02I01D01901G01D02F01F01801C01F01G01G02H02J01801D01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-huizhougucheng.html')">
+								<a href="/jingdian-huizhougucheng.html">徽州古城</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>黄山九龙瀑旅游攻略</b> 黄山九龙瀑是中国七大名瀑之一，瀑长600米，落差360米，一 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601B01C01601F01A01601A01D01A01701801B02H02H01F01D02G01802H01B01F01902G02I02I02F02J02H01G01702K02F01E01701502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-huangshanjiulongpu.html')">
+								<a href="/jingdian-huangshanjiulongpu.html">九龙瀑</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>六安天堂寨旅游攻略</b> 天堂寨风景区被誉为“华东最后一片原始森林”，是“安徽省五个最 ... </div>
+							<div class="img" l="01602N02R02F02L02J01602J02J01601F01A01601G01F01802J02F01B01B01A01D01901801C02G02J02F02F01D01A02H01D02F02H02K02F02I01D01B01B01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-tiantangzhai.html')">
+								<a href="/jingdian-tiantangzhai.html">天堂寨</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>合肥包公园旅游攻略</b> 包公园是为纪念北宋著名清官包拯而建的主题园区，全园以“历史包 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601B02J01601F01A01602K01701F02I01E02H01D01801801C02J01801G01F01D01802K01F01B01E01F01E01901A02H01701C02H01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-baogongyuan.html')">
+								<a href="/jingdian-baogongyuan.html">合肥包</a>
+							</div>
+						</div>
+						<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+							<div class="tooltip"><b>安徽巢湖旅游攻略</b> 巢湖是我国五大淡水湖之一，景区自然景观揽湖光、山色、温泉、溶 ... </div>
+							<div class="img" l="01602N02R02F02L02J01601A01G01602J01901602G01B01801801801802I02I02F01D01E01702I02J01D02I02K02F01E01802I01E01F02J01D02F02K01G01502O02U02L" style="width:80px;height:60px;" onclick="go2('/jingdian-anhuichaohu.html')">
+								<a href="/jingdian-anhuichaohu.html">巢湖</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="mapscenics2"></div>
+				<div id="mapdiv" style="height:640px">
+					<div class="load" style="text-align:center;">
+						<h1>埇桥区卫星地图</h1> 加载中，请稍候... <img src="https://i.meet99.cn/image/map/w/afc420eeecd0b08332f3d285a7087fbb.jpg" width="300" height="200" alt="埇桥卫星地图" title="埇桥卫星地图" class="mapimg" />
+						<div style="background:url(https://s.meet99.cn/img/progress.gif);width:80px;height:20px;margin: 0 auto;" /></div>
+				</div>
+			</div>
+			<div id="mapdivhide"></div>
+			<div id="mapinfo" style="padding-left:5px;margin-top:2px;border:0;">
+				<div style="float:left;width:336px;height:280px;background:#FFF;margin:10px 10px 0 5px;">
+					<script type="text/javascript" src="//b1.meet99.com/site/js/b8za.js?hcrburz=eu"></script>
+				</div>
+				<b>埇桥简介：</b>埇桥区，安徽省宿州市区域，在安徽省东北部，1999年由原县级宿州市更名而来是宿州市唯一市区域，2009年底全区国土2868平方公里，耕地14.2万公顷。含25个乡镇、11个街道，325个村、43个社区，180万。埇桥区在淮北平原，属暖温带半湿润气候，奎、濉、沱、浍河等河流经过，有利于农业生产是传统的农业大区是中国重要的商品粮、棉、油、肉、蛋生产基地。是“中华烧鸡之乡”、“全国超级产粮大区”、“产油大区”、“无公害农产品生产基地”、“国家绿色农业示范区”、省“生猪调出大县（区）”、“蔬菜产业化十强县（区）”。埇桥区工业发展迅速，形成了以食品加工、机械制造、纺织、化工、建材、板材六大门类为主的工业格局。墉桥区历史文化底蕴非常深厚。是“中国书法之乡”、“中国马戏之乡”。秦末陈胜吴广起义发端于此，白居易曾寓居符离“东林草堂”。孔子的弟子闵子骞，“竹林七贤”中的嵇康，陈胜、吴广起义中的将领葛婴、朱鸡石，明朝开国皇后马秀英、将领康茂才等，都是埇桥区人。<br>
+				<div style="width:320px;margin:10px auto;font-weight:bold;text-align:center;">埇桥周边旅游景点排行榜（图文攻略）</div>
+				<div id="sceniclist">
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>宿州市博物馆旅游攻略</b> 宿州市博物馆是安徽省“十一五”十大地标性建筑，也是展示宿州最 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601E01G01601B02F01601D01801B01E01902I01902J01G01G01E01A01E01G01B01C02K02H01F01E01A02J02F02J01D02J02J02G01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-suzhoushibowuguan.html')">
+							<a href="/jingdian-suzhoushibowuguan.html">宿州市博物馆</a>
+						</div>
+						<div class="cornernum">
+							<div>1</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>宿州五柳旅游攻略</b> 宿州五柳风景名胜区以“山青、水秀、洞奇、泉灵、稻香”而闻名， ... </div>
+						<div class="img" l="01602N02R02F02L02J01601A01701601C02F01601C02G02H01701901901901A01B01701801D02F02I01902I01E01902F01F01B02F02G01701C01D02H01C01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-wlfjq.html')">
+							<a href="/jingdian-wlfjq.html">宿州五柳风景名胜区</a>
+						</div>
+						<div class="cornernum">
+							<div>2</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>皇藏峪国家森林公园旅游攻略</b> 皇藏峪因后汉高祖刘邦称帝前曾避秦兵追捕而藏身于此而得名，景区 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601902H01601G02F01601701D01B01C01D01F01D02F01901801F02J01A01E01C01901D01A02I02F01E01B01802I01802G01801801502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-huangcangyu.html')">
+							<a href="/jingdian-huangcangyu.html">皇藏峪国家森林公园</a>
+						</div>
+						<div class="cornernum">
+							<div>3</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>灵璧奇石文化园旅游攻略</b> 灵璧奇石文化园以“九龙壁”磬石和“笑口常开”纹石为代表，将“ ... </div>
+						<div class="img" l="01602N02R02F02L02J01602J01B01601802H01601G01702H02J01C02F01B02G01D02J01C02J02H02F02H01A01G02H02F01G01A02I01G01A02F02I01B01B01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-lingbiqishi.html')">
+							<a href="/jingdian-lingbiqishi.html">灵璧奇石文化园</a>
+						</div>
+						<div class="cornernum">
+							<div>4</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽灵璧农业观光示范园旅游攻略</b> 安徽灵璧农业观光示范园是全国一流的现代化农业园区，集高新技术 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601E01901601702I01601902I02K01C02H01702H02I02I01E01A01A01F01A01G02H01F02G01701802I01E02I01D02I01C01A02J01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-lingbinongbo.html')">
+							<a href="/jingdian-lingbinongbo.html">安徽灵璧农业观光示范园</a>
+						</div>
+						<div class="cornernum">
+							<div>5</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽黄山旅游攻略</b> 黄山为三山五岳中的三山之一，被誉为“天下第一奇山”，黄山风景 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602I01701601802J01601G01801702J01G02I01B02K01A01E01B02F01A02F01B02F02I01G02F01901F01A01G01A01A01A01701A01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-anhuihuangshan.html')">
+							<a href="/jingdian-anhuihuangshan.html">安徽黄山风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>6</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>九华山旅游攻略</b> 九华山自古就是我国著名的旅游胜地，与五台、峨眉、普陀合称中国 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601901A01601E01D01602G01A01G01901G02G01D02F02I01901C02F01G01902F01F02F01E01702I01801E01701702J02G01D01E01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-jiuhuashan.html')">
+							<a href="/jingdian-jiuhuashan.html">九华山风景名胜区</a>
+						</div>
+						<div class="cornernum">
+							<div>7</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽宏村旅游攻略</b> 安徽宏村被誉为“中国画里的乡村”，是古黟桃花源里一座奇特的牛 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601D01901601G02H01601702J01D02G02J01702K01901C01902J01D01D02J01702I01G01701701B02I02I01D01A01E02F01F01701502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-hongcun.html')">
+							<a href="/jingdian-hongcun.html">安徽宏村</a>
+						</div>
+						<div class="cornernum">
+							<div>8</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>天柱山旅游攻略</b> 天柱山因主峰如柱倚天而得名，其内“峰雄、石奇、洞幽、水秀”， ... </div>
+						<div class="img" l="01602N02R02F02L02J01601702G01601B01701601701A02H01C01701B02G01C02F02H02H02F01901801G01F01A02F01C01B01B01E01902I01C01E01702I01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-tianzhushan.html')">
+							<a href="/jingdian-tianzhushan.html">天柱山风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>9</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽西递村旅游攻略</b> 西递古村村落面积190多亩，是一处胡姓聚族而居的古村落。村庄 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602I02J01601E01A01602J01801902J01F01702F01702H01A02J02G02K02G02K02J01701B02K01A01A01E02G01G02K02J01D01801502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-xidi.html')">
+							<a href="/jingdian-xidi.html">安徽西递村</a>
+						</div>
+						<div class="cornernum">
+							<div>10</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽徽州古城旅游攻略</b> 徽州古城，是千年徽州府治所在地，古城周围五峰拱秀，六水迴澜， ... </div>
+						<div class="img" l="01602N02R02F02L02J01601E01G01601802H01601A01A01G01701701C02J01D02K01B02F02H02G02G01902J02J01901901A01B01702K01D02H02I01701801502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-huizhougucheng.html')">
+							<a href="/jingdian-huizhougucheng.html">安徽徽州古城</a>
+						</div>
+						<div class="cornernum">
+							<div>11</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>黄山九龙瀑旅游攻略</b> 黄山九龙瀑是中国七大名瀑之一，瀑长600米，落差360米，一 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601E02I01602I01701601901901701901G01901B01801801E02J02K01B01F02K02G01F01E02K02J02K01F01901B01902F01902I01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-huangshanjiulongpu.html')">
+							<a href="/jingdian-huangshanjiulongpu.html">黄山九龙瀑景区</a>
+						</div>
+						<div class="cornernum">
+							<div>12</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>六安天堂寨旅游攻略</b> 天堂寨风景区被誉为“华东最后一片原始森林”，是“安徽省五个最 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601C02H01601D01F01601G02I01801E01G01B01B01702K01B02F01F02J02H02F02K01B01C02F02K01A01G01D01A02J02I01B02F01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-tiantangzhai.html')">
+							<a href="/jingdian-tiantangzhai.html">六安天堂寨</a>
+						</div>
+						<div class="cornernum">
+							<div>13</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>合肥包公园旅游攻略</b> 包公园是为纪念北宋著名清官包拯而建的主题园区，全园以“历史包 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602J01701602K02F01601F01901E01C01902J02K01902K02H01E01F01D02F02G02H01G01B02I01E02F01D01701D01G01702H01G01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-baogongyuan.html')">
+							<a href="/jingdian-baogongyuan.html">合肥包公园</a>
+						</div>
+						<div class="cornernum">
+							<div>14</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽巢湖旅游攻略</b> 巢湖是我国五大淡水湖之一，景区自然景观揽湖光、山色、温泉、溶 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601F02H01602F02J01602H01A02H01B01802H01702F02J01B01G01E02H01E02K01801901802I01D02G01702H01A01901A01C01G01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-anhuichaohu.html')">
+							<a href="/jingdian-anhuichaohu.html">安徽巢湖风景名胜区</a>
+						</div>
+						<div class="cornernum">
+							<div>15</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>黄山太平湖旅游攻略</b> 太平湖地处黄山和九华山之间，风光以水取胜，以生态见优，以岛称 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602H02H01602F01F01601C01E01D01D02H01F01E01702K01D02G02H01E01B01G02H02G02H02H02J01C02K01A02H02G02I02J01B01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-taipinghu.html')">
+							<a href="/jingdian-taipinghu.html">黄山太平湖风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>16</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽三河古镇旅游攻略</b> 三河镇因地处水陆要冲，历史上既是兵家必争之地，又是商家云集之 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602G02H01601F01F01601F02F02F01E01B01901C01C01A02I01F02F01C02G01E01801D01G01G01D02K02H01B02J01C01B02F01D01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-sanheguzhen.html')">
+							<a href="/jingdian-sanheguzhen.html">安徽三河古镇</a>
+						</div>
+						<div class="cornernum">
+							<div>17</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>徽州呈坎旅游攻略</b> 徽州呈坎古镇是世界迄今发现保存最古老、最完整的东汉八卦风水古 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601C02I01601F02K01601E01E01D02I01A01B02G01G02H02H02K01901D02H01702I02I01701D02J01A01E01C01802I01D02I01F01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-chengkan.html')">
+							<a href="/jingdian-chengkan.html">徽州呈坎</a>
+						</div>
+						<div class="cornernum">
+							<div>18</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>新安江山水画廊旅游攻略</b> 新安江是歙县人民的母亲河，也是古徽州文明的摇篮，新安江山水画 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602F01F01601G02F01602H01D01G01G01802G01901702J01C02J01D01C01G01E01B02F01G01C01D02F02K02I01701E02J01902I01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-xinanjiang.html')">
+							<a href="/jingdian-xinanjiang.html">新安江山水画廊</a>
+						</div>
+						<div class="cornernum">
+							<div>19</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>滁州琅琊山旅游攻略</b> 琅琊山以山水之美著称，风景区内丘壑林泉，层峦起伏，蔚然深秀， ... </div>
+						<div class="img" l="01602N02R02F02L02J01601A01D01601A02H01601D01902K02F01B02I02H01701801D01A02K01701G01C01D01G01801A01701702H02H01A02K02H02I01G01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-chuzhoulangyashan.html')">
+							<a href="/jingdian-chuzhoulangyashan.html">滁州琅琊山风景名胜区</a>
+						</div>
+						<div class="cornernum">
+							<div>20</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>芜湖方特欢乐世界旅游攻略</b> 芜湖方特欢乐世界是中国目前规模最大的第四代主题公园，公园以科 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601A01A01601D01901602H02K01G02J01C01C01901F02I02H01A02J01702I01801701E02G01F01F02G02J02F01G01G01F02K01E01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-fangtehuanleshijie.html')">
+							<a href="/jingdian-fangtehuanleshijie.html">芜湖方特欢乐世界</a>
+						</div>
+						<div class="cornernum">
+							<div>21</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>黄山翡翠谷旅游攻略</b> 黄山翡翠谷，昵称情人谷，谷中险峰竟秀、怪石争奇，森林茂密，花 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601801A01602K02G01601F01G01D02J01902F02K01A01701701E01802F02J01C01B02K01C02F01B01G01B01A01702J02I02J01C01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-feicuigu.html')">
+							<a href="/jingdian-feicuigu.html">黄山翡翠谷风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>22</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>棠樾牌坊群·鲍家花园旅游攻略</b> 棠樾牌坊群·鲍家花园景区是一处由古牌坊、古祠堂、古民居、鲍家 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602J01A01601G01D01601F02J01F02G02H01901801A02I02J01C02K01C02H01D01C02F02K01A01A01B02G01901B01G01E01701C01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-tangyuepaifang.html')">
+							<a href="/jingdian-tangyuepaifang.html">棠樾牌坊群·鲍家花园</a>
+						</div>
+						<div class="cornernum">
+							<div>23</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>石台牯牛降旅游攻略</b> 牯牛降古称“西黄山”，主峰海拔1727.6米，区内山岳风光秀 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601C01901601A01E01601G02F01G01701D01901C02F02G02G01F02G02I01A01E01F02F02H02K01D01701701B01C01G01701B02J01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-shitaiguniujiang.html')">
+							<a href="/jingdian-shitaiguniujiang.html">石台牯牛降风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>24</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>安徽齐云山旅游攻略</b> 齐云山风景名胜区，古称白岳，与黄山南北相望，因最高峰廊崖“一 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601801701602K01A01601G02F02G01701C02H01F01B01D02J02J02F01F01801G02G02K01801C02K01901801E02H01E01G02I01C01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-qiyunshan.html')">
+							<a href="/jingdian-qiyunshan.html">安徽齐云山风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>25</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>合肥野生动物园旅游攻略</b> 合肥野生动物园以“地球——人类与动物共享的空间”为建园思想， ... </div>
+						<div class="img" l="01602N02R02F02L02J01601701B01601701E01602G01A01D02F01B01F02H02J01901901801B02H02H01802I01801D02F01G01A02I02G01D01B01E01A02I01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-hefeiyeshengdongwuyuan.html')">
+							<a href="/jingdian-hefeiyeshengdongwuyuan.html">合肥野生动物园</a>
+						</div>
+						<div class="cornernum">
+							<div>26</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>合肥徽园旅游攻略</b> 徽园园内浓缩汇集了安徽全省的著名风景及其历史文化古迹，是安徽 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601F02H01601801B01601A02H02K01E01A02H02I02F01702H02I01G02K02J01E01D01D02H01A01G01901E01G01802K01E01D01F01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-huiyuan.html')">
+							<a href="/jingdian-huiyuan.html">合肥徽园</a>
+						</div>
+						<div class="cornernum">
+							<div>27</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>广德太极洞旅游攻略</b> 安徽广德太极洞是华东地区最大的地下溶洞群，溶洞全长5400余 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601901A01601701F01601F02H02K01802F01D02I01801E01701702F02H01801F01B01F01A01801C01E01A01F02H02I02J02I01901502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-taijidong.html')">
+							<a href="/jingdian-taijidong.html">广德太极洞风景区</a>
+						</div>
+						<div class="cornernum">
+							<div>28</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>李鸿章故居及享堂旅游攻略</b> 李鸿章故居是晚清军政大臣李鸿章的家宅，为典型的晚清江淮地区民 ... </div>
+						<div class="img" l="01602N02R02F02L02J01601C02G01601701901601902J01901G01F01F02H01F02H01B01F01901C01G02G01G01C01F02F01G02K02K02F01B02G01C01702H01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-lihongzhangguju.html')">
+							<a href="/jingdian-lihongzhangguju.html">李鸿章故居及享堂</a>
+						</div>
+						<div class="cornernum">
+							<div>29</div>
+						</div>
+					</div>
+					<div t="" class="box" style="-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;">
+						<div class="tooltip"><b>大别山主峰旅游攻略</b> 大别山素以雄、奇、险、幽而闻名于世，大别山第一高峰白马尖海拔 ... </div>
+						<div class="img" l="01602N02R02F02L02J01602J01A01601E02K01602F01701D02G02F02I01801801C02J01802K02J02K01701E01B01G01802I01A01A02K02K01A01901B02J01502O02U02L" style="width:160px;height:120px;" onclick="go2('/jingdian-dabieshan.html')">
+							<a href="/jingdian-dabieshan.html">大别山主峰景区</a>
+						</div>
+						<div class="cornernum">
+							<div>30</div>
+						</div>
+					</div>
+				</div>
+				<div style="width:600px;margin:10px auto;">
+					<table class="weather">
+						<tr>
+							<td style="text-align:center;">宿州<br></td>
+							<td style="border-left:1px dashed #ddd;">今：晴<br>26℃ / 35℃<br>东南微风→南微风</td>
+							<td style="border-left:1px dashed #ddd;">明：晴→多云<br>26℃ / 36℃<br>东南微风</td>
+							<td style="border-left:1px dashed #ddd;">后天：晴→多云<br>27℃ / 36℃<br>东南微风→南微风</td>
+						</tr>
+					</table>
+					<table class="weatherindex">
+						<tr>
+							<td style="font-weight:bold;text-align:right;white-space:nowrap;vertical-align:top;border:1px solid #666666;padding:4px;  ">穿衣：</td>
+							<td style="text-align:center;white-space:nowrap;vertical-align:top; border:1px solid #666666;padding:4px; ">炎热</td>
+							<td style="border:1px solid #666666;padding:4px; ">天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold;text-align:right;white-space:nowrap;vertical-align:top;border:1px solid #666666;padding:4px;  ">舒适度：</td>
+							<td style="text-align:center;white-space:nowrap;vertical-align:top; border:1px solid #666666;padding:4px; ">较不舒适</td>
+							<td style="border:1px solid #666666;padding:4px; ">白天天气晴好，明媚的阳光在给您带来好心情的同时，也会使您感到有些热，不很舒适。</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold;text-align:right;white-space:nowrap;vertical-align:top;border:1px solid #666666;padding:4px;  ">晨练：</td>
+							<td style="text-align:center;white-space:nowrap;vertical-align:top; border:1px solid #666666;padding:4px; ">较适宜</td>
+							<td style="border:1px solid #666666;padding:4px; ">早晨气象条件较适宜晨练，但风力稍大，晨练时请注意选择避风的地点，避免迎风锻炼。</td>
+						</tr>
+					</table>
+					<div style="text-align:right;margin-right:20px;">发布时间：2019-07-20 08:00</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div id="mleft">
+			<ul id="treemenu" class="treeview">
+				<li id="world" class="hasChildren">
+					<a href="/map-world.html">其他国家和地区</a>
+					<ul style="display:none;">
+						<li><span class="placeholder">&nbsp;</span></li>
+					</ul>
+				</li>
+				<li class="open">
+					<a href="/map">中国</a>
+					<ul>
+						<li id="mycity" class="hasChildren"></li>
+						<li class="open">
+							<a href="/map-anhui.html">安徽省</a>
+							<ul>
+								<li class="open">
+									<a href="/map-suzhoushi.html">宿州市</a>
+									<ul>
+										<li class="open">
+											<div class="selected">埇桥区</div>
+											<ul>
+												<li>
+													<a href="/map-n23207.html">埇桥街道</a>
+												</li>
+												<li>
+													<a href="/map-n23208.html">沱河街道</a>
+												</li>
+												<li>
+													<a href="/map-n23209.html">道东街道</a>
+												</li>
+												<li>
+													<a href="/map-4374.html">东关街道</a>
+												</li>
+												<li>
+													<a href="/map-4333.html">三里湾街道</a>
+												</li>
+												<li>
+													<a href="/map-n23212.html">南关街道</a>
+												</li>
+												<li>
+													<a href="/map-n23213.html">西关街道</a>
+												</li>
+												<li>
+													<a href="/map-n23214.html">北关街道</a>
+												</li>
+												<li>
+													<a href="/map-n23215.html">汴河街道</a>
+												</li>
+												<li>
+													<a href="/map-n23216.html">三八街道</a>
+												</li>
+												<li>
+													<a href="/map-n23217.html">城东街道</a>
+												</li>
+												<li>
+													<a href="/map-n23242.html">金海街道</a>
+												</li>
+												<li>
+													<a href="/map-n23218.html">符离集镇</a>
+												</li>
+												<li>
+													<a href="/map-n23219.html">芦岭镇</a>
+												</li>
+												<li>
+													<a href="/map-n23220.html">朱仙庄镇</a>
+												</li>
+												<li>
+													<a href="/map-n23221.html">褚兰镇</a>
+												</li>
+												<li>
+													<a href="/map-n23222.html">曹村镇</a>
+												</li>
+												<li>
+													<a href="/map-n23223.html">夹沟镇</a>
+												</li>
+												<li>
+													<a href="/map-n23224.html">栏杆镇</a>
+												</li>
+												<li>
+													<a href="/map-n23225.html">时村镇</a>
+												</li>
+												<li>
+													<a href="/map-n23226.html">永安镇</a>
+												</li>
+												<li>
+													<a href="/map-n23227.html">灰古镇</a>
+												</li>
+												<li>
+													<a href="/map-n23228.html">大店镇</a>
+												</li>
+												<li>
+													<a href="/map-n23229.html">西寺坡镇</a>
+												</li>
+												<li>
+													<a href="/map-n23230.html">桃园镇</a>
+												</li>
+												<li>
+													<a href="/map-n23231.html">蕲县镇</a>
+												</li>
+												<li>
+													<a href="/map-n23232.html">大营镇</a>
+												</li>
+												<li>
+													<a href="/map-n23233.html">杨庄乡</a>
+												</li>
+												<li>
+													<a href="/map-n23234.html">支河乡</a>
+												</li>
+												<li>
+													<a href="/map-n23235.html">解集乡</a>
+												</li>
+												<li>
+													<a href="/map-n23236.html">桃沟乡</a>
+												</li>
+												<li>
+													<a href="/map-n23237.html">顺河乡</a>
+												</li>
+												<li>
+													<a href="/map-n23238.html">蒿沟乡</a>
+												</li>
+												<li>
+													<a href="/map-n23239.html">苗庵乡</a>
+												</li>
+												<li>
+													<a href="/map-n23240.html">永镇乡</a>
+												</li>
+												<li>
+													<a href="/map-n23241.html">西二铺乡</a>
+												</li>
+											</ul>
+										</li>
+										<li id="dangshan" class="hasChildren">
+											<a href="/map-dangshan.html">砀山县</a>
+											<ul style="display:none;">
+												<li><span class="placeholder">&nbsp;</span></li>
+											</ul>
+										</li>
+										<li id="xiaoxian" class="hasChildren">
+											<a href="/map-xiaoxian.html">萧县</a>
+											<ul style="display:none;">
+												<li><span class="placeholder">&nbsp;</span></li>
+											</ul>
+										</li>
+										<li id="lingbi" class="hasChildren">
+											<a href="/map-lingbi.html">灵璧县</a>
+											<ul style="display:none;">
+												<li><span class="placeholder">&nbsp;</span></li>
+											</ul>
+										</li>
+										<li id="sixian" class="hasChildren">
+											<a href="/map-sixian.html">泗县</a>
+											<ul style="display:none;">
+												<li><span class="placeholder">&nbsp;</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li id="hefei" class="hasChildren">
+									<a href="/map-hefei.html">合肥市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="wuhu" class="hasChildren">
+									<a href="/map-wuhu.html">芜湖市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="bengbu" class="hasChildren">
+									<a href="/map-bengbu.html">蚌埠市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="huainan" class="hasChildren">
+									<a href="/map-huainan.html">淮南市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="maanshan" class="hasChildren">
+									<a href="/map-maanshan.html">马鞍山市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="huaibei" class="hasChildren">
+									<a href="/map-huaibei.html">淮北市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="tongling" class="hasChildren">
+									<a href="/map-tongling.html">铜陵市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="anqing" class="hasChildren">
+									<a href="/map-anqing.html">安庆市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="huangshan" class="hasChildren">
+									<a href="/map-huangshan.html">黄山市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="chuzhou" class="hasChildren">
+									<a href="/map-chuzhou.html">滁州市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="fuyangshi" class="hasChildren">
+									<a href="/map-fuyangshi.html">阜阳市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="liuan" class="hasChildren">
+									<a href="/map-liuan.html">六安市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="haozhou" class="hasChildren">
+									<a href="/map-haozhou.html">亳州市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="chizhou" class="hasChildren">
+									<a href="/map-chizhou.html">池州市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+								<li id="xuancheng" class="hasChildren">
+									<a href="/map-xuancheng.html">宣城市</a>
+									<ul style="display:none;">
+										<li><span class="placeholder">&nbsp;</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li id="china" class="hasChildren">
+							<a href="/map">其他省市</a>
+							<ul style="display:none;">
+								<li><span class="placeholder">&nbsp;</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li id="null" class="open collapsable">
+					<a href="/sky">宇宙星际奇观</a>
+				</li>
+			</ul>
+		</div>
+		<div id="mright">
+			<div id="mapscenics2"></div>
+			<div id="mrightad">
+				<div style="width:160px;margin:18px auto 0 auto;"><ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2388453716303466" data-ad-slot="map/1359466353"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;width:250px;margin:0 auto;overflow:hidden;text-align:center;margin-top:20px;">
+			<div id="weixinimg" class="img" l="01602S02J02b02N02R02L01602V02W01801C01701502O02U02L" style="width:150px;height:150px;margin:0 auto;"></div>微信扫码订阅，获国内外9000景点攻略</div>
+		</div>
+		<div id="footer">
+			<div onclick="showAdvice()" style="text-align:center;width:100px;margin:0 auto;color:#00F;cursor:pointer;font-weight:bold;">本页内容纠错</div>如有转载和版权问题请您联系管理员。
+			<a href="/exempt"><u>免责声明</u></a> 2019
+			<a href="/about"><u>联系相约久久网</u></a>&nbsp;
+			<a href="/link"><u>友情链接</u></a>&nbsp;
+			<a href="http://www.miibeian.gov.cn">京ICP备09041951号</a>&nbsp; 简体版&nbsp;
+			<a href="https://zh.meet99.com/map-yongqiao.html" style="color:#00F">繁體版</a>&nbsp;
+			<a href="https://m.meet99.com/map-yongqiao.html" style="color:#00F">手机版</a>
+			<div id="dmessage"></div>
+		</div>
+		<script type="text/javascript" src="https://s.meet99.cn/js/jquery183.js"></script>
+		<script type="text/javascript" src="https://s.meet99.cn/js/all.js?v=20190108.js"></script>
+		<script type="text/javascript">
+			var fp = '01602N02R02F02L02J01601E01G01601C01A01601801F02K01E02J01701901E01C01B01802F02F02G02G01B01702H01801E01C02G01C01702J01D01801G01502O02U02L';
+			var tid = "01A01A01501D01B01701902D01801801D01501G01E01E02D01801C02D01E01E01F01802DCH8000000";
+			var gtype = "china_6";
+			var fmap = "qmap";
+			stat();
+		</script>
+		<script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.async = true;
+				hm.src = "https://hm.baidu.com/hm.js?9ee138b42a64fd1fee727659e189c033";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</body>
+
+</html>

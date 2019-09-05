@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js"></script>
+		<style>
+			.slide-fade-enter-active {
+			  transition: all .3s ease;
+			}
+			.slide-fade-leave-active {
+			  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+			}
+			.slide-fade-enter, .slide-fade-leave-to
+			/* .slide-fade-leave-active for below version 2.1.8 */ {
+			  transform: translateX(10px);
+			  opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<input type="button" value="toggle" @click="flag=!flag" />
+		   <tranaition name="slide-fade">
+		   	 <h3 v-if="flag">这是一个h3</h3>
+		   </tranaition>
+		  
+		</div>
+		<script>
+			var vm=new Vue({
+				el:'#app',
+				data:{
+					flag:true
+				}
+			});
+		</script>
+	</body>
+</html>
