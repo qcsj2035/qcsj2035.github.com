@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Sum/GetSum">
+            求和<br />
+            第一个数:<input type="search" name="num1" /><br />
+            第二个数:<input type="search" name="num2" /><br />
+            <input type="submit" value="开始计算" />
+          
+            @ViewData["get"]
+        </form>
+    </div>
+</body>
+</html>

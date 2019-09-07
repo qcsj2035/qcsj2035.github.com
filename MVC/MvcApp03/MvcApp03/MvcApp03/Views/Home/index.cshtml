@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "index";
+}
+
+
+<h2>2131</h2>
+<div>
+    
+    @{
+        MvcApp03.Models.employee emp = (MvcApp03.Models.employee)
+            ViewData["employee"];
+            
+            <b>employee Detals<br />
+               employee name:@emp.FirstName,@emp.LastName;
+               employee Salary:@emp.Salary.ToString();
+                
+            </b>
+            
+    }
+
+    
+    </div>
